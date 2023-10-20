@@ -39,7 +39,10 @@ class Team:
         for n in range(n):
             self.add_members()
         if len(self.team_members) != 0:
-            return self.team_members
+            print("\n",("Team Members").center(40,'*'))
+            for index, member in enumerate(self.team_members, start=1):
+                print(index, member)
+                
     
 team = Team()
-print(team.display_members())
+team.display_members()
